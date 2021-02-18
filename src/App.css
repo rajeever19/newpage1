@@ -1,38 +1,315 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url("./assets/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: #aa5226;
+}
+.container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner_text {
+  width: 500px;
+}
+.banner_text h3 {
+  color: #000;
+  font-size: 30px;
+}
+.banner_text h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.banner_text p {
+  font-size: 25px;
+  color: dimgrey;
+  margin-top: 20px;
+}
+
+.navbar {
+  position: relative;
+  background-color: lightblue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.navbar__text {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  width: 40%;
+}
+.logo img {
+  width: 45px;
+}
+.logo h4 {
+  color: deepskyblue;
+  display: inline-flex;
+}
+.navbar__ul {
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar__ul li a {
+  text-decoration: none;
+  color: #444444;
+  padding: 0 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.banner_btn {
+  margin-top: 35px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.btn_smart {
+  background: rgb(255, 69, 79);
+}
+.about {
+  padding: 80px 0;
+}
+
+.p-25 {
+  padding: 45px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-6 {
+  width: 50%;
+  align-items: center;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.about {
+  margin-top: 0%;
+}
+.about h3 {
+  color: rgba(37, 37, 37, 0.7);
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.about h1 {
+  font-size: 40px;
+  color: #ca0e0e;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.about .shoe_type {
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  line-height: 25px;
+  color: #252525;
+  font-weight: 300;
+}
+
+.about_btn {
+  margin-top: 35px;
+}
+.about_img {
+  margin-top: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about_img img {
+  height: 50%;
+  width: 100%;
+}
+.shop {
+  width: 100%;
+  background: url("./assets/img2.jpg"), radial-gradient(rgb(56, 56, 56), rgb(39, 39, 39));
+  background-blend-mode: multiply;
+
+  height: 450px;
+  background-attachment: fixed;
+}
+.shop_text {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  color: rgb(12, 167, 141);
+}
+.shop_text h1 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+.shop__btn {
+  margin-top: 35px;
+}
+
+.clients {
+  width: 100%;
+  padding: 100px 0;
+  background: url("./assets/img2.jpg"),radial-gradient(#3f3e3e,#d80e0e);
+  background-blend-mode:multiply ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: lightgray;
+  background-attachment: fixed;
+}
+
+.client {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.client h1 {
+  font-style: 45px;
+}
+.client p {
+  font-style: 18px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.prices {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.price {
+  padding: 20px;
+  text-align: center;
+}
+.price__img {
+height: 250px;
+  width: 100%;
+}
+
+.price__img img {
+  width: 250px;
+}
+
+.price__heading {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.price__text {
+  margin-top: 15px;
+  color: #888888;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.price_rs {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+  .navbar__text {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .banner__text {
+    width: auto;
+  }
+  .banner__text h3 {
+    font-size: 25px !important;
+  }
+  .banner__text h1 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+  .banner__text p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .navbar__ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar__ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .col-3,
+  .col-4,
+  .col-6 {
+    width: 100%;
+  }
+  .client {
+    margin: 20px 0;
+  }
+  .about h1 {
+    font-size: 25px;
+  }
+  .shop h1 {
+    font-size: 25px;
+  }
+  .menu h1 {
+    font-size: 25px;
   }
 }
