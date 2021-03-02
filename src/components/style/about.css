@@ -1,0 +1,38 @@
+.about {
+    margin-top: 0%;
+  }
+  .about h3 {
+    color: rgba(37, 37, 37, 0.7);
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .about h1 {
+    font-size: 40px;
+    color: #ca0e0e;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  .about .shoe_type {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    line-height: 25px;
+    color: #252525;
+    font-weight: 300;
+  }
+  
+  .about_btn {
+    margin-top: 35px;
+  }
+  .about_img {
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .about_img img {
+    height: 50%;
+    width: 100%;
+  }

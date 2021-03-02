@@ -1,0 +1,133 @@
+.banner {
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  background: url("../../assets/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: #aa5226;
+}
+.container {
+  width: 100%;
+  padding: 40px 40px 40px 40px;
+  margin: 0 auto;
+}
+.banner_text {
+  width: 500px;
+}
+.banner_text h3 {
+  color: #000;
+  font-size: 30px;
+}
+.banner_text h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 450;
+  margin-top: 20px;
+}
+.banner_text p {
+  font-size: 25px;
+  color: dimgrey;
+  margin-top: 20px;
+}
+
+.banner_btn {
+  margin-top: 35px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.btn_smart {
+  background: rgb(255, 69, 79);
+}
+@media only screen and (max-width: 740px) {
+  .banner {
+    width: 100%;
+    left: 0;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner_content {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    color: #aa5226;
+  }
+  .container {
+    width: 700px;
+    padding: 0 30px;
+  }
+  .banner_text {
+    left: 0;
+    right: 0;
+    width: inherit;
+  }
+  .banner_text h3 {
+    font-size: 25px !important;
+  }
+  .banner_text h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 450;
+    margin-top: 10px;
+  }
+  .banner_text p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .banner {
+    width: 420px;
+    left: 0;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .banner_content {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    color: #aa5226;
+  }
+
+  .container {
+    width: 380px !important;
+    padding: 0 30px;
+  }
+  .banner_text {
+    margin-top: 50px;
+  }
+  .banner_text h3 {
+    font-size: 15px;
+  }
+  .banner_text h1 {
+    font-size: 15px;
+    font-weight: 180;
+    margin-top: 10px;
+  }
+  .banner_text p {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+}

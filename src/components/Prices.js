@@ -1,5 +1,5 @@
 import React from "react";
-
+import img1 from '../assets/img3.jpg'
 const Prices = () => {
   const prod = [
     {
@@ -72,7 +72,7 @@ const Prices = () => {
             <div className="col-4" key={i}>
               <div className="price">
                 <div className="price__img">
-                  <img src={p.img} alt={p.name || "shoe"} />
+                  <img src={img1} alt={p.name || "shoe"} />
                 </div>
                 <h1 className="price__heading">{p.name} Shoes</h1>
                 <p className="price__text">{p.desc}</p>

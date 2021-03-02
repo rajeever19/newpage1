@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
-
+import './style/header.css'
 const Header = () => {
   return (
     <div className="banner">

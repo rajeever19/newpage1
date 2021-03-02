@@ -1,33 +1,36 @@
-import React from "react";
-import logo from "../assets/twitter.svg";
-
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="navbar__text">
-        <div className="logo">
-          <img src={logo} alt="logo" /><h4>B.D.S. SHOPPING</h4>
+import React, { Component } from "react";
+import { Button } from "./button/Button";
+import { MenuItems } from "./Navbar/MenuItems";
+import "./Navbar/navbar.css";
+class Navbar extends Component {
+  state = { clicked: false };
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+  render() {
+    return (
+      <nav className="NavbarItems">
+        <h1 className="navbar-logo">
+          B.D.S. <i className="fa fa-shopping-bag"></i>
+        </h1>
+        <div className="menu-icon" onClick={this.handleClick}>
+          <i
+            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+          ></i>
         </div>
-        <ul className="navbar__ul">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Menu</a>
-          </li>
-          <li>
-            <a href="">Shop</a>
-          </li>
-          <li>
-            <a href="">News</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+          {MenuItems.map((item, index) => (
+            <li key={index}>
+              <a href={item.url} className={item.cName}>
+                {item.title}
+              </a>
+            </li>
+          ))}
         </ul>
-      </div>
-    </nav>
-  );
-};
+        <Button>Sign up</Button>
+      </nav>
+    );
+  }
+}
 
 export default Navbar;

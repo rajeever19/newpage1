@@ -7,7 +7,7 @@ const Menu = () => {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <div className="about__img">
+            <div className="about_img">
               <img src={img} alt="shoe" />
             </div>
           </div>

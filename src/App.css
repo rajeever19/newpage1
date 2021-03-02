@@ -72,19 +72,6 @@ body {
   color: deepskyblue;
   display: inline-flex;
 }
-.navbar__ul {
-  width: 60%;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-}
-.navbar__ul li a {
-  text-decoration: none;
-  color: #444444;
-  padding: 0 15px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
 
 .banner_btn {
   margin-top: 35px;

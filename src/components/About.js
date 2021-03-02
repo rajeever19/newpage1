@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../assets/img2.jpg";
-
+import { Button } from "./button/Button";
+import './style/about.css'
 const About = () => {
   return (
     <div className="about">
@@ -21,9 +22,7 @@ const About = () => {
               the London.
             </p>
             <div className="about_btn">
-              <a href="" className="btn btn_smart">
-                READ MORE
-              </a>
+              <Button className="btn btn_smart">READ MORE</Button>
             </div>
           </div>
           <div className="col-6">
